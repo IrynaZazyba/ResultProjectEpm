@@ -1,8 +1,8 @@
 package by.javatr.library.runner;
 
 import by.javatr.library.runner.scanner.DataScanner;
-import by.javatr.library.dao.util.Request;
-import by.javatr.library.dao.util.Response;
+import by.javatr.library.service.util.Request;
+import by.javatr.library.service.util.Response;
 import java.util.Map;
 
 

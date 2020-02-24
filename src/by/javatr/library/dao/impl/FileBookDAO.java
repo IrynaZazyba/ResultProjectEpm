@@ -57,7 +57,7 @@ public class FileBookDAO implements BookDAO {
                 books.add(gson.fromJson(book, Book.class));
             }
         } catch (ReadFileException ex) {
-            throw new DAOFileParserException("Reading file caused an error.");
+            throw new DAOFileParserException("Reading file caused an error.",ex);
         }
 
         return books;
@@ -81,7 +81,7 @@ public class FileBookDAO implements BookDAO {
         try {
             WriteFileManager.writeToFile(book, FILE, true);
         } catch (WriteFileException ex) {
-            throw new DAOFileParserException("Writing file caused an error");
+            throw new DAOFileParserException("Writing file caused an error",ex);
         }
     }
 
@@ -102,7 +102,7 @@ public class FileBookDAO implements BookDAO {
             try {
                 WriteFileManager.writeToFile(books, FILE);
             } catch (WriteFileException ex) {
-                throw new DAOFileParserException("Writing file caused an error");
+                throw new DAOFileParserException("Writing file caused an error",ex);
             }
         }
     }

@@ -4,7 +4,7 @@ import by.javatr.library.controller.command.Command;
 import by.javatr.library.service.exception.ServiceException;
 import by.javatr.library.service.factory.ServiceFactory;
 import by.javatr.library.service.LibraryService;
-import by.javatr.library.dao.util.Response;
+import by.javatr.library.service.util.Response;
 
 import java.util.Map;
 

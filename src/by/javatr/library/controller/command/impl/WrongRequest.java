@@ -1,7 +1,7 @@
 package by.javatr.library.controller.command.impl;
 
 import by.javatr.library.controller.command.Command;
-import by.javatr.library.dao.util.Response;
+import by.javatr.library.service.util.Response;
 import java.util.Map;
 
 public class WrongRequest implements Command {

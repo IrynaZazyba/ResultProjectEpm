@@ -1,6 +1,6 @@
 package by.javatr.library.controller.command;
 
-import by.javatr.library.dao.util.Response;
+import by.javatr.library.service.util.Response;
 
 import java.util.Map;
 

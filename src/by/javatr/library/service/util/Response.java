@@ -1,18 +1,29 @@
-package by.javatr.library.dao.util;
+package by.javatr.library.service.util;
 
 import java.util.*;
 
-public class Request {
 
-    private int command;
+public class Response {
+
+    private boolean status;
+    private String commandName;
     private Map<String, String> parameters = new LinkedHashMap<>();
 
-    public int getCommand() {
-        return command;
+
+    public String getCommandName() {
+        return commandName;
     }
 
-    public void setCommand(int command) {
-        this.command = command;
+    public void setCommandName(String commandName) {
+        this.commandName = commandName;
+    }
+
+    public boolean getStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 
     public void addParameter(String key, String value) {
@@ -23,11 +34,13 @@ public class Request {
         return Collections.unmodifiableMap(parameters);
     }
 
+
     @Override
     public int hashCode() {
         int prime = 31;
         int result = 1;
-        result = result * prime + command;
+        result = result * prime + Boolean.hashCode(status);
+        result = result * prime + (commandName == null ? 0 : 1);
         result = result * prime + (parameters==null?0:parameters.hashCode());
         return result;
     }
@@ -36,8 +49,9 @@ public class Request {
     public boolean equals(Object obj) {
         if (obj == this) return true;
         if (obj.getClass() == getClass()) return false;
-        Request other = (Request) obj;
-        if (this.command != other.command) return false;
+        Response other = (Response) obj;
+        if (this.status != other.status) return false;
+        if (this.commandName.equals(other.commandName)) return false;
         if (this.parameters == null) {
             if (other.parameters != null) return false;
         } else {
@@ -45,6 +59,7 @@ public class Request {
         }
         return true;
     }
+
 
     @Override
     public String toString() {
@@ -57,7 +72,9 @@ public class Request {
         }
 
         return getClass().getName() + '@'
-                + "command " + command
-                + ", parameters" + sb;
+                + "status=" + status
+                + ", commandName=" + commandName
+                + ", parameters=" + sb;
     }
+
 }

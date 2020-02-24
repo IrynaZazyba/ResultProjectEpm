@@ -6,7 +6,7 @@ import by.javatr.library.service.exception.ServiceException;
 import by.javatr.library.service.factory.ServiceFactory;
 import by.javatr.library.service.ClientService;
 import by.javatr.library.service.LibraryService;
-import by.javatr.library.dao.util.Response;
+import by.javatr.library.service.util.Response;
 import by.javatr.library.dao.util.Role;
 
 import java.util.List;
