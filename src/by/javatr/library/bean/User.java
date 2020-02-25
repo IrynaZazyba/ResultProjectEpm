@@ -1,4 +1,4 @@
-package by.javatr.library.dao.bean;
+package by.javatr.library.bean;
 
 import by.javatr.library.dao.util.Role;
 import by.javatr.library.dao.util.Status;

@@ -1,6 +1,6 @@
 package by.javatr.library.dao.impl;
 
-import by.javatr.library.dao.bean.Book;
+import by.javatr.library.bean.Book;
 import by.javatr.library.dao.BookDAO;
 import by.javatr.library.dao.exception.DAOBookLogicException;
 import by.javatr.library.dao.exception.DAOEmptyDataException;

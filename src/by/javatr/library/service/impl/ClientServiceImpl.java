@@ -2,7 +2,7 @@ package by.javatr.library.service.impl;
 
 import by.javatr.library.dao.util.Role;
 import by.javatr.library.dao.util.Status;
-import by.javatr.library.dao.bean.User;
+import by.javatr.library.bean.User;
 import by.javatr.library.dao.UserDAO;
 import by.javatr.library.dao.exception.DAOException;
 import by.javatr.library.service.exception.*;

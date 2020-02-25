@@ -1,7 +1,7 @@
 package by.javatr.library.dao.impl;
 
 import by.javatr.library.dao.util.Status;
-import by.javatr.library.dao.bean.User;
+import by.javatr.library.bean.User;
 import by.javatr.library.dao.UserDAO;
 import by.javatr.library.dao.parser.exception.*;
 import by.javatr.library.dao.exception.*;

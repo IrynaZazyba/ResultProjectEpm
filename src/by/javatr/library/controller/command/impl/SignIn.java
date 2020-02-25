@@ -1,6 +1,6 @@
 package by.javatr.library.controller.command.impl;
 
-import by.javatr.library.dao.bean.User;
+import by.javatr.library.bean.User;
 import by.javatr.library.controller.command.Command;
 import by.javatr.library.service.exception.ServiceException;
 import by.javatr.library.service.factory.ServiceFactory;

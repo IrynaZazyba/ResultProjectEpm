@@ -1,6 +1,6 @@
 package by.javatr.library.service.util;
 
-import by.javatr.library.dao.bean.User;
+import by.javatr.library.bean.User;
 import by.javatr.library.dao.util.Role;
 import by.javatr.library.service.factory.ServiceFactory;
 import by.javatr.library.service.ClientService;

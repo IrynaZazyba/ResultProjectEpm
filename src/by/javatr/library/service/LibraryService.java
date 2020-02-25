@@ -1,6 +1,6 @@
 package by.javatr.library.service;
 
-import by.javatr.library.dao.bean.Book;
+import by.javatr.library.bean.Book;
 import by.javatr.library.service.exception.ServiceException;
 
 import java.util.List;
